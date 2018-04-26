@@ -1,0 +1,10 @@
+public static  boolean isEmpty(EditText etText) {
+        if (etText.getText().toString().trim().length() > 0) {
+            return true;
+        } else {
+            etText.requestFocus();
+            etText.setError("Vui lòng di?n thông tin!");
+            return false;
+        }
+    }
+    
